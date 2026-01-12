@@ -1,0 +1,77 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+/* Main container for login */
+.login-page {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f5f7fa;
+}
+
+/* Card */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 32px;
+  border-radius: 12px;
+
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.card-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 32px;
+  color: #111827;
+}
+
+/* Fields */
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.input-field label {
+  position: static !important;
+  transform: none !important;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.input-field input {
+  height: 44px;
+  padding: 0 14px;
+
+  border-radius: 8px !important;
+  border: 1px solid #d1d5db !important;
+
+  box-shadow: none !important;
+}
+
+.input-field input:focus {
+  border-color: #2e7d32 !important;
+  box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.15) !important;
+}
+
+/* Button */
+.login-button {
+  width: 100%;
+  height: 44px;
+  margin-top: 12px;
+
+  border-radius: 8px;
+  font-weight: 600;
+}

@@ -1,25 +1,19 @@
 import { Routes } from '@angular/router';
 
-import { LoginComponent } from './pages/auth/login/login.component';
-import { HomeComponent } from './pages/home/home.component';
-import { TaxPredictionComponent } from './pages/consultation/tax-prediction/tax-prediction.component';
-
 export const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+
   {
-    path: '',
-    redirectTo: 'login',
-    pathMatch: 'full'
+    path: 'home',
+    loadComponent: () => import('./pages/home/home.component').then((m) => m.HomeComponent),
   },
   {
     path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'home',
-    component: HomeComponent
+    loadComponent: () => import('./pages/auth/login/login.component').then((m) => m.LoginComponent),
   },
   {
     path: 'tax-prediction',
-    component: TaxPredictionComponent
-  }
+    loadComponent: () =>
+      import('./pages/consultation/tax-prediction/tax-prediction.component').then((m) => m.TaxPredictionComponent),
+  },
 ];
