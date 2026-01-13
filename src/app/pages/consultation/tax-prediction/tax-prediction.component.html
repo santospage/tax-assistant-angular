@@ -1,1 +1,35 @@
-<p>tax-prediction works!</p>
+<div class="tax-page">
+  <div class="tax-card">
+    <h2 class="card-title">Tax Prediction</h2>
+
+    <p class="card-description">
+      Enter the customer and product information below to analyze and suggest the most commonly used tax profiles for
+      this combination.
+    </p>
+
+    <!-- Inputs -->
+    <div class="inputs-grid">
+      <div class="input-field">
+        <label for="customer">Customer</label>
+        <input id="customer" type="text" placeholder="Search customer" />
+      </div>
+
+      <div class="input-field">
+        <label for="product">Product</label>
+        <input id="product" type="text" placeholder="Search product" />
+      </div>
+    </div>
+
+    <!-- Results placeholder -->
+    <div class="results-box">
+      <p class="results-title">Suggested Tax Profiles</p>
+      <p class="results-placeholder">Results will be displayed here after the analysis.</p>
+    </div>
+
+    <!-- Actions -->
+    <div class="actions">
+      <button class="btn cancel-btn">Cancel</button>
+      <button class="btn confirm-btn green">OK</button>
+    </div>
+  </div>
+</div>
